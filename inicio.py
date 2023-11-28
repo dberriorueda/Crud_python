@@ -31,6 +31,8 @@ def eliminar_marca(marca):
         print(f"La marca '{marca} no se encuentra.'")
 
 def mostrar_marcas():
+    if not motos:
+        print("No hay motos guardadas.")
     for marca, modelo in motos:
         print(f"Marca: {marca}, modelo: {modelo}") 
 
